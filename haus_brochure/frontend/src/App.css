@@ -12,6 +12,48 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #e23f3f;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.brochure-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.brochure-title {
+  margin-bottom: 1rem;
+}
+
+.download-button {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.brochure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
 
 .App-header {
   background-color: #282c34;
