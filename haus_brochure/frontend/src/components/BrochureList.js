@@ -1,5 +1,6 @@
 import React from 'react';
 import BrochureItem from './BrochureItem';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const brochures = [
   "Çevre Uygulamaları E Serisi Broşürü",
@@ -10,11 +11,15 @@ const brochures = [
 
 const BrochureList = () => {
   return (
-    <div className="brochure-list">
-      {brochures.map((title, index) => (
-        <BrochureItem key={index} title={title} />
-      ))}
-    </div>
+    <Container>
+      <Row>
+        {brochures.map((title, index) => (
+          <Col key={index} xs={12} md={4}>
+            <BrochureItem title={title} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

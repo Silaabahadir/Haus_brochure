@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from './components/navbar';
+import MyNavbar from './components/navbar';
 import BrochureList from './components/BrochureList';
-import './App.css'; // Genel stil dosyası
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
-    <div className="app">
-      <Navbar />
+    <div>
+      <MyNavbar />
       <main>
         <BrochureList />
       </main>
-      <footer>
+      <footer className="text-center py-3">
         #BECAUSEWECARE
       </footer>
     </div>

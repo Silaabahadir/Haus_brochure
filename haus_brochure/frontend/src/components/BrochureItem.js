@@ -1,11 +1,14 @@
 import React from 'react';
+import { Card, Button } from 'react-bootstrap';
 
 const BrochureItem = ({ title }) => {
   return (
-    <div className="brochure-item">
-      <div className="brochure-title">{title}</div>
-      <button className="download-button">İndir</button>
-    </div>
+    <Card style={{ width: '18rem', margin: '1rem' }}>
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Button variant="danger">İndir</Button>
+      </Card.Body>
+    </Card>
   );
 };
 
