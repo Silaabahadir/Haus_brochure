@@ -14,14 +14,7 @@
   }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -139,15 +132,10 @@
 }
 
 .download-button {
-  color: #ffffff;
-  background-color: #e01e1e;
+  background-color: #ddd;
   border: none;
-  padding: 0.25rem 2rem;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  font-size: 0.85rem;
-  border-radius: 6px;
-  margin-top: 12rem; /* Yukarıdaki içerikten biraz uzaklaştırma */
-  align-self: center;
 }
 
 .brochure-list {
@@ -197,4 +185,13 @@
   width: 130px;
   height: auto;
   margin: 10px;
+}
+.qr-code {
+  margin: 16px 0;
+}
+
+.qr-code img {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0.1rem;
 }

@@ -34,6 +34,7 @@ const brochures = {
   ],
 };
 
+
 const BrochureList = () => {
   const [selectedCategory, setSelectedCategory] = useState('ürün');
   const [selectedLanguage, setSelectedLanguage] = useState('tr');
