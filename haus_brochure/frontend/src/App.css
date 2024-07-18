@@ -12,6 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,7 +20,6 @@
   background-color: #e23f3f;
   border-bottom: 1px solid #ddd;
 }
- 
 
 .navbar-custom {
   background-color: #dc3545; /* Kırmızı arka plan rengi */
@@ -30,7 +30,6 @@
 .navbar-custom .dropdown-item {
   color: white !important; /* Beyaz yazı rengi */
 }
-
 
 .navbar-brand {
   font-size: 1.5rem;
@@ -43,6 +42,7 @@
   color: #ffffff;
   font-weight: bolder;
 }
+
 .brochure-item {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -60,6 +60,7 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
 .brochure-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

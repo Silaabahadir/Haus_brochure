@@ -1,25 +1,33 @@
 import React from 'react';
 import BrochureItem from './BrochureItem';
-import { Container, Row, Col } from 'react-bootstrap';
 
 const brochures = [
   "Çevre Uygulamaları E Serisi Broşürü",
   "Gıda Uygulamaları F Serisi Broşürü",
   "Endüstri Uygulamaları I Serisi Broşürü",
+  "HAUS Dekantörler",
+  "HAUS Süt Sepratörleri",
+  "Olive Plus 33 Broşürü",
+  "Olive Plus 52 Broşürü",
+  "Olive Plus 53 Broşürü ",
+  "Olive Plus 55 Broşürü",
+  "Olive Plus 64 Broşürü ",
+  "Olive Pro 21 Broşürü",
+  "Olive Pro 31 Broşürü",
+  "HAUS Turbo Blower Broşürü",
+  "HAUS Vidalı Pres Broşürü",
+  "HAUS Separatörler",
+  
   // Diğer broşürler...
 ];
 
 const BrochureList = () => {
   return (
-    <Container>
-      <Row>
-        {brochures.map((title, index) => (
-          <Col key={index} xs={12} md={4}>
-            <BrochureItem title={title} />
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div className="brochure-list">
+      {brochures.map((title, index) => (
+        <BrochureItem key={index} title={title} />
+      ))}
+    </div>
   );
 };
 
