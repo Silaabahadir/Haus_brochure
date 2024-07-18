@@ -1,7 +1,6 @@
 import React from 'react';
 import MyNavbar from './components/navbar';
 import BrochureList from './components/BrochureList';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (

@@ -4,8 +4,10 @@ import '../App.css'; // App.css dosyasını import edin
 const MyNavbar = () => {
   return (
     <div className="navbar-custom">
-      <a className="navbar-brand" href="#home">HAUS</a>
-      <div className="nav-links">
+      <div className="logo">
+          <img src="./indir.jpg" alt="logo" />
+        </div>
+      <div className="navbar-links">
         <a className="nav-link" href="#home">Ürünler</a>
         <a className="nav-link" href="#link">Uygulamalar</a>
         <div className="nav-dropdown">
