@@ -18,6 +18,15 @@ brochures = {
     "HAUS Turbo Blower Broşürü":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Vidalı Pres Broşürü":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Separatörler":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "Environment Applications · E Series":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "Food Applications · F Series":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "Industrial Applications · I Series":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Decanters":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Dairy Separators":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Turbo Blower":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Screw Press":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Separators":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+
     }
 
 # QR kodlarının kaydedileceği dizin
