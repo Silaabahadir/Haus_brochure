@@ -94,16 +94,16 @@
 }
 
 .navbar-links .nav-dropdown:hover .nav-link {
-  background-color: #ff000093;
+  background-color: #811b1bf3;
 }
 
 /* Brochure styles */
 .brochure-item {
-  border: 1px solid #ddd;
+  border: 2px solid #5e5e5e;
   border-radius: 25px;
   padding: 0.5rem;
   text-align: center;
-  width: 220px; /* Kutucuk genişliği */
+  width: 260px; /* Kutucuk genişliği */
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@
 .brochure-title {
   margin: 0;
   font-size: 1.2rem;
-  background-color: #af2d2d;
+  background-color: #962323;
   color: white;
   padding: 0.5rem 0;
   width: 100%;
@@ -132,7 +132,7 @@
 
 .download-button { 
   color: #ffffff; 
-  background-color: #9e2424; 
+  background-color: #962323; 
   border: none; 
   padding: 0.25rem 2rem; 
   cursor: pointer; 
@@ -263,3 +263,25 @@
 .submit-button:hover {
   background-color: #45a049;
 }
+/* BrochureList.css */
+.brochure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .brochure-list {
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .brochure-list {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-content: center;
+  }
+}
+
