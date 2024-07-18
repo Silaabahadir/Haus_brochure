@@ -13,16 +13,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.logo {
-  display: flex;
-  justify-content: space-between; /* Öğeleri sağa ve sola hizalamak için */
-  align-items: center;
-}
-.logo img {
-  width: 130px;
-  height: auto;
-  margin: 10px;
-}
+
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -101,18 +94,17 @@
 }
 
 .navbar-links .nav-dropdown:hover .nav-link {
-  background-color: #ff000093;
+  background-color: #811b1bf3;
 }
 
 /* Brochure styles */
 .brochure-item {
-  border: 1px solid #ddd;
+  border: 2px solid #5e5e5e;
   border-radius: 25px;
   padding: 0.5rem;
   text-align: center;
   width: 260px; /* Kutucuk genişliği */
-  height: 280px;
-
+  height: 300px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -125,7 +117,7 @@
 .brochure-title {
   margin: 0;
   font-size: 1.2rem;
-  background-color: #af2d2d;
+  background-color: #962323;
   color: white;
   padding: 0.5rem 0;
   width: 100%;
@@ -138,15 +130,17 @@
   box-sizing: border-box;
 }
 
-.download-button {
-  color: #ffffff;
-  background-color: #e01e1e;
-  border: none;
-  padding: 0.25rem 2rem;
-  cursor: pointer;
-  font-size: 0.85rem;
-  border-radius: 6px;
-  align-self: center;
+.download-button { 
+  color: #ffffff; 
+  background-color: #962323; 
+  border: none; 
+  padding: 0.25rem 2rem; 
+  cursor: pointer; 
+  font-size: 0.85rem; 
+  border-radius: 6px; 
+  align-self: center; 
+  width: 80%;
+  
 }
 .brochure-list {
   display: flex;
@@ -186,24 +180,21 @@
   gap: 1rem;
   margin-top: 2rem;
 }
-
-.qr-code {
-  margin: 1rem 0;
-  flex-grow: 1; /* QR kodunun mevcut alanı doldurmasını sağlar */
+.logo {
   display: flex;
+  justify-content: space-between; /* Öğeleri sağa ve sola hizalamak için */
   align-items: center;
-  justify-content: center;
+}
+.logo img {
+  width: 130px;
+  height: auto;
+  margin: 10px;
+}
+.qr-code {
+  margin: 16px 0;
 }
 
 .qr-code img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-/* Brochure form styles */
-.brochure-form-container {
-  margin-top: 1rem;
   max-width: 80%;
   height: 10rem;
   margin: 2rem 0.1rem 0rem 0rem;
@@ -230,7 +221,6 @@
   max-width: 500px;
   position: relative;
 }
-
 .modal-close {
   position: absolute;
   top: 10px;
@@ -244,26 +234,52 @@
 .brochure-form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
 }
 
-.brochure-form input,
-.brochure-form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.brochure-form div {
+  margin-bottom: 15px;
 }
 
-.brochure-form button {
-  padding: 0.5rem;
-  background-color: #e01e1e;
+.brochure-form label {
+  margin-bottom: 5px;
+}
+
+.brochure-form input, .brochure-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px;
   border: none;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.brochure-form button:hover {
-  background-color: #c01717;
+.submit-button:hover {
+  background-color: #45a049;
+}
+/* BrochureList.css */
+.brochure-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .brochure-list {
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .brochure-list {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-content: center;
+  }
 }

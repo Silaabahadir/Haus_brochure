@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // App.css dosyasını import edin
+import '../App.css';
 
 const MyNavbar = () => {
   return (
