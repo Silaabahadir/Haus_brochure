@@ -54,6 +54,14 @@
   margin-bottom: 1rem;
 }
 
+.qr-code {
+  margin: 16px 0;
+}
+
+.qr-code img {
+  max-width: 100%;
+  height: auto;
+}
 .download-button {
   background-color: #ddd;
   border: none;
