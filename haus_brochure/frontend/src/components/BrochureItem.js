@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BrochureItem = ({ title }) => {
+  const [showForm, setShowForm] = useState(false);
+
   const brochures = [
     { title: 'Çevre Uygulamaları E Serisi Broşürü', qrName: 'Çevre_Uygulamalari_E_Serisi_Brosuru.png' },
     { title: 'Gıda Uygulamaları F Serisi Broşürü', qrName: 'Gida_Uygulamalari_F_Serisi_Brosuru.png' },
@@ -34,7 +36,22 @@ const BrochureItem = ({ title }) => {
           <img src={qrImageUrl} alt={`${title} QR Code`} />
         </div>
       )}
-      <button className="download-button">İndir</button>
+      <button className="download-button" onClick={() => setShowForm(!showForm)}>İndir</button>
+      {showForm && (
+        <div className="brochure-form-container">
+          <h2>Bilgi Girin</h2>
+          <form className="brochure-form">
+            <input type="text" placeholder="Ad-Soyad" required />
+            <input type="email" placeholder="E-mail" required />
+            <input type="tel" placeholder="Cep Telefonu" required />
+            <input type="text" placeholder="Firma Adı" required />
+            <input type="text" placeholder="Ülke Adı" required />
+            <input type="text" placeholder="Şehir" required />
+            <textarea placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
