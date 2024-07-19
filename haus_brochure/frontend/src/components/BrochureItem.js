@@ -1,6 +1,7 @@
-
 import React, { useState } from 'react';
 import Modal from './Modal';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 const BrochureItem = ({ title }) => {
   const brochures = [
@@ -30,6 +31,7 @@ const BrochureItem = ({ title }) => {
   ];
 
   const [modalVisible, setModalVisible] = useState(false);
+  const [phone, setPhone] = useState('');
 
   const findBrochure = (title) => brochures.find(b => b.title === title);
 
@@ -64,7 +66,12 @@ const BrochureItem = ({ title }) => {
           <input type="email" required placeholder='E-mail' />
           
           <label>Cep Telefonu:</label>
-          <input type="tel" required placeholder='0(5**) *** ** **'/>
+          <PhoneInput
+            country={'tr'}
+            value={phone}
+            onChange={phone => setPhone(phone)}
+            required
+          />
           
           <label>Firma Adı:</label>
           <input type="text" required placeholder='Firma Adı'/>
