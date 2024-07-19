@@ -61,6 +61,10 @@ const BrochureList = () => {
         <select onChange={handleLanguageChange} value={selectedLanguage}>
           <option value="tr">TR</option>
           <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="ru">RU</option>
+          <option value="it">IT</option>
+          <option value="fr">FR</option>
         </select>
         <input
           type="text"
