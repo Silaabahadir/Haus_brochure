@@ -327,4 +327,35 @@ button[type="button"]:hover {
     justify-content: center;
   }
 }
+/* Ülke seçimi için stil */
+select[name="country"] {
+  width: 200px; /* Genişlik ayarı */
+  height: 40px; /* Yükseklik ayarı */
+  padding: 8px; /* İç boşluk ayarı */
+  border: 1px solid #ccc; /* Kenarlık ayarı */
+  border-radius: 4px; /* Köşe yuvarlatma */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Gölgelendirme */
+  background-color: #fff; /* Arka plan rengi */
+  font-size: 16px; /* Yazı tipi boyutu */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Geçiş efektleri */
+}
+
+select[name="country"]:focus {
+  border-color: #007bff; /* Odaklandığında kenarlık rengi */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2); /* Odaklandığında gölgelendirme */
+  outline: none; /* Varsayılan odak çerçevesini kaldır */
+  width: 100%;
+}
+
+select[name="country"] option {
+  padding: 10px; /* Seçenekler için iç boşluk */
+  width: 100%;
+
+}
+
+select[name="country"] {
+  overflow-y: auto; /* Eğer çok seçenek varsa kaydırma */
+  width: 100%;
+
+}
 
