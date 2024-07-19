@@ -30,7 +30,9 @@ brochures = {
     }
 
 # QR kodlarının kaydedileceği dizin
-save_dir = "./haus_brochure/frontend/public/images/QR_code"
+save_dir = "/home/slabahadir/Desktop/Haus_brochure/haus_brochure/frontend/public/images/QR_code"
+
+
 
 # Dizin yoksa oluştur
 if not os.path.exists(save_dir):

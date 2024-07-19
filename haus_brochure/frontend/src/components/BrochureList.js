@@ -59,8 +59,8 @@ const BrochureList = () => {
           <option value="uygulama">UYGULAMA</option>
         </select>
         <select onChange={handleLanguageChange} value={selectedLanguage}>
-          <option value="tr">Türkçe</option>
-          <option value="en">İngilizce</option>
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
         </select>
         <input
           type="text"

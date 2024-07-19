@@ -38,6 +38,7 @@ const BrochureItem = ({ title }) => {
     const link = document.createElement('a');
     link.href = brochure.jpgUrl;  // JPEG dosyasının URL'si
     link.download = `${title}.jpg`;  // İndirilen dosyanın adı
+    link.target="_blank";
     link.click();
   };
 
@@ -57,7 +58,7 @@ const BrochureItem = ({ title }) => {
           <label>Ad Soyad:</label>
           <input type="text" required placeholder='Ad Soyad' />
           
-          <label>Email:</label>
+          <label type="email">Email:</label>
           <input type="email" required placeholder='E-mail' />
           
           <label>Cep Telefonu:</label>
