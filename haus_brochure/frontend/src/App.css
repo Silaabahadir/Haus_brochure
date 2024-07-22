@@ -232,6 +232,9 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
+.modal-content label input[type="checkbox"]{
+  margin-right: 0.5rem;
+}
 
 h2 {
   margin-top: 0;
@@ -252,7 +255,7 @@ label {
 input, textarea {
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 100%;
 }
 
@@ -286,6 +289,7 @@ button[type="button"]:hover {
 
 .brochure-form label {
   margin-bottom: 5px;
+  
 }
 
 .brochure-form input, .brochure-form textarea {
@@ -312,6 +316,7 @@ button[type="button"]:hover {
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   gap: 20px;
   padding: 20px;
+  
 }
 
 @media (min-width: 1200px) {
