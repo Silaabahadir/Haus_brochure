@@ -286,12 +286,13 @@ button[type="button"]:hover {
 
 .brochure-form label {
   margin-bottom: 5px;
+  
 }
 
 .brochure-form input, .brochure-form textarea {
   width: 100%;
   padding: 8px;
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 
 .submit-button {

@@ -100,51 +100,52 @@ const BrochureItem = ({ title }) => {
       <button className="download-button" onClick={() => setModalVisible(true)}>İndir</button>
 
       <Modal isOpen={modalVisible} onClose={() => setModalVisible(false)}>
-        <h2>Broşür Talep Formu</h2>
-        <form>
-          <label>Ad Soyad:</label>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder='Ad Soyad' />
-          {errors.name && <span className="error">{errors.name}</span>}
-          
-          <label>Email:</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder='E-mail' />
-          {errors.email && <span className="error">{errors.email}</span>}
-          
-          <label>Cep Telefonu:</label>
-          <PhoneInput
-            country={'tr'}
-            value={phone}
-            onChange={phone => setPhone(phone)}
-            required
-          />
-
-          
-          <label>Firma Adı:</label>
-          <input type="text" name="company" value={formData.company} onChange={handleChange} required placeholder='Firma Adı'/>
-          {errors.company && <span className="error">{errors.company}</span>}
-          
-          <label>Ülke Adı:</label>
-          <select name="country" value={formData.country} onChange={handleChange} required>
-            <option value="">Ülke Seçin</option>
-            {countryOptions.map((country) => (
-              <option key={country.code} value={country.name}>{country.name}</option>
-            ))}
-          </select>
-          {errors.country && <span className="error">{errors.country}</span>}
-          
-          <label>Mesajınız:</label>
-          <textarea name="message" value={formData.message} onChange={handleChange} rows="4" required></textarea>
-          {errors.message && <span className="error">{errors.message}</span>}
-          
-          <label>
-            <input type="checkbox" name="accepted" checked={formData.accepted} onChange={handleChange} required />
-            KVKK metnini okudum kabul ediyorum.
-          </label>
-          {errors.accepted && <span className="error">{errors.accepted}</span>}
-          
-          <button type="button" onClick={handleDownload} disabled={!isFormValid()}>Broşür Talep Et</button>
-        </form>
-      </Modal>
+  <h2>Broşür Talep Formu</h2>
+  <form>
+    <label>Ad Soyad:</label>
+    <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder='Ad Soyad' />
+    {errors.name && <span className="error">{errors.name}</span>}
+    
+    <label>Email:</label>
+    <input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder='E-mail' />
+    {errors.email && <span className="error">{errors.email}</span>}
+    
+    <label>Cep Telefonu:</label>
+    <div className="phone-input-wrapper">
+      <PhoneInput
+        country={'tr'}
+        value={phone}
+        onChange={phone => setPhone(phone)}
+        required
+      />
+    </div>
+    
+    <label>Firma Adı:</label>
+    <input type="text" name="company" value={formData.company} onChange={handleChange} required placeholder='Firma Adı'/>
+    {errors.company && <span className="error">{errors.company}</span>}
+    
+    <label>Ülke Adı:</label>
+    <select name="country" value={formData.country} onChange={handleChange} required>
+      <option value="">Ülke Seçin</option>
+      {countryOptions.map((country) => (
+        <option key={country.code} value={country.name}>{country.name}</option>
+      ))}
+    </select>
+    {errors.country && <span className="error">{errors.country}</span>}
+    
+    <label>Mesajınız:</label>
+    <textarea name="message" value={formData.message} onChange={handleChange} rows="4" required></textarea>
+    {errors.message && <span className="error">{errors.message}</span>}
+    
+    <label>
+      <input type="checkbox" name="accepted" checked={formData.accepted} onChange={handleChange} required />
+      KVKK metnini okudum kabul ediyorum.
+    </label>
+    {errors.accepted && <span className="error">{errors.accepted}</span>}
+    
+    <button type="button" onClick={handleDownload} disabled={!isFormValid()}>Broşür Talep Et</button>
+  </form>
+</Modal>
     </div>
   );
 };
