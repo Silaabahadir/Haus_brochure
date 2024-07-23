@@ -14,7 +14,7 @@ brochures = {
     "Olive Plus 55 Broşürü":"https://www.hausworld.com/uploads/brochures/TR/olive_plus_55.pdf",
     "Olive Plus 64 Broşürü":"https://www.hausworld.com/uploads/brochures/TR/olive_plus_64.pdf",
     "Olive Pro 21 Broşürü":"https://www.hausworld.com/uploads/brochures/TR/olive_pro_21.pdf",
-    "Olive Pro 31 Broşürü":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "Olive Pro 31 Broşürü":"https://www.hausworld.com/uploads/brochures/TR/olive_pro_31.pdf",
     "HAUS Turbo Blower Broşürü":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Vidalı Pres Broşürü":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Separatörler":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
@@ -23,7 +23,7 @@ brochures = {
     "Industrial Applications · I Series":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Decanters":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Dairy Separators":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
-    "HAUS Turbo Blower":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
+    "HAUS Turbo Blower":"https://www.hausworld.com/uploads/brochures/EN/turbo_blower.pdf",
     "HAUS Screw Press":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
     "HAUS Separators":"https://www.zeykamatbaa.com/upload/7811615971743.jpg",
 
