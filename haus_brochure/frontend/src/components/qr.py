@@ -30,7 +30,7 @@ brochures = {
     }
 
 # QR kodlarının kaydedileceği dizin
-save_dir = "/home/slabahadir/Desktop/Haus_brochure/haus_brochure/frontend/public/images/QR_code"
+save_dir = "../haus_brochure/frontend/public/images/QR_code"
 
 
 
