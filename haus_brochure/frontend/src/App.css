@@ -195,8 +195,8 @@
 }
 
 .qr-code img {
-  max-width: 80%;
-  height: 10rem;
+  max-width: 15rem;
+  height: 15rem;
   margin: 2rem 0.1rem 0rem 0rem;
 }
 /* Modal.css */
