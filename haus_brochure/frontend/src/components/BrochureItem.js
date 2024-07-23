@@ -100,7 +100,6 @@ const handleChange = (e) => {
           <img src={`/images/QR_code/${brochure.qrName}`} alt={`${title} QR Code`} />
         </div>
       )}
-      <button className="download-button" onClick={() => setModalVisible(true)}>İndir</button>
 
       <Modal isOpen={modalVisible} onClose={() => setModalVisible(false)}>
         <h2>Broşür Talep Formu</h2>
