@@ -76,7 +76,7 @@ const handleChange = (e) => {
     if (brochure && brochure.jpgUrl) {
       const link = document.createElement('a');
       link.href = brochure.jpgUrl;  // JPEG dosyasının URL'si
-      link.download = ${title}.jpg;  // İndirilen dosyanın adı
+      link.download = `${title}.jpg`;  // İndirilen dosyanın adı
       link.target = "_blank";
       link.click();
     } else {
@@ -96,7 +96,7 @@ const handleChange = (e) => {
       <h3 className="brochure-title">{title}</h3>
       {brochure && brochure.qrName && (
         <div className="qr-code">
-          <img src={/images/QR_code/${brochure.qrName}} alt={${title} QR Code} />
+          <img src={`/images/QR_code/${brochure.qrName}`} alt={`${title} QR Code`} />
         </div>
       )}
       <button className="download-button" onClick={() => setModalVisible(true)}>İndir</button>
