@@ -39,7 +39,7 @@ if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
 for title, url in brochures.items():
-    # Dosya adı oluşturma (geçersiz karakterleri kaldır veya değiştir)
+    # Dosya adı oluşturgit ma (geçersiz karakterleri kaldır veya değiştir)
     file_name = title.replace(" ", "_").replace("ç", "c").replace("ğ", "g").replace("ü", "u").replace("ş", "s").replace("ö", "o").replace("ı", "i") + ".png"
     file_path = os.path.join(save_dir, file_name)
     

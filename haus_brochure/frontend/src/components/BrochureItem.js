@@ -42,7 +42,6 @@ const BrochureItem = ({ title }) => {
     accepted: false,
   });
   const [errors, setErrors] = useState({});
-
 const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -145,7 +144,6 @@ const handleChange = (e) => {
             <input type="checkbox" name="accepted" checked={formData.accepted} onChange={handleChange} required />
             KVKK metnini okudum kabul ediyorum.
           </label>
-
 {errors.accepted && <span className="error">{errors.accepted}</span>}
           
           <button type="button" onClick={handleDownload} disabled={!isFormValid()}>Broşür Talep Et</button>
