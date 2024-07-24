@@ -21,17 +21,17 @@ const BrochureItem = ({ title }) => {
     { title: 'HAUS Turbo Blower Broşürü', qrName: 'HAUS_Turbo_Blower_Brosuru.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/turbo_blower.pdf' },
     { title: 'HAUS Vidalı Pres Broşürü', qrName: 'HAUS_Vidali_Pres_Brosuru.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/TR/vidali_pres.pdf' },
     { title: 'HAUS Separatörler', qrName: 'HAUS_Separatorler.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/TR/separatorler.pdf' },
-    { title: 'Environment Applications · E Series', qrName: 'https://www.hausworld.com/uploads/brochures/EN/dde_series.pdf' },
+    { title: 'Environment Applications · E Series', qrName: "Environment_Applications_·_E_Series.png",jpgUrl:'https://www.hausworld.com/uploads/brochures/EN/dde_series..pdf' },
     { title: 'Food Applications · F Series', qrName: 'Food_Applications_·_F_Series.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/ddf_series.pdf' },
     { title: 'Industrial Applications · I Series', qrName: 'Industrial_Applications_·_I_Series.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/ddi_series.pdf' },
-    { title: 'HAUS Decanters', qrName: 'HAUS_Decanters.png', jpgUrl: 'file:///home/slabahadir/Downloads/_uploads_brochures_EN_decanters.pdf' },
-    { title: 'HAUS Dairy Separators', qrName: 'HAUS_Dairy_Separators.png', jpgUrl: 'https://www.zeykamatbaa.com/upload/7811615971743.jpg' },
+    { title: 'HAUS Decanters', qrName: 'HAUS_Decanters.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/decanters.pdf' },
+    { title: 'HAUS Dairy Separators', qrName: 'HAUS_Dairy_Separators.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/dairy_applications.pdf'},
     { title: 'HAUS Turbo Blower', qrName: 'HAUS_Turbo_Blower.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/turbo_blower.pdf' },
-    { title: 'HAUS Screw Press', qrName: 'HAUS_Screw_Press.png', jpgUrl: 'https://www.zeykamatbaa.com/upload/7811615971743.jpg' },
-    { title: 'HAUS Separators', qrName: 'HAUS_Separators.png' },
+    { title: 'HAUS Screw Press', qrName: 'HAUS_Screw_Press.png', jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/screw_press.pdf' },
+    { title: 'HAUS Separators', qrName: 'HAUS_Separators.png',jpgUrl: 'https://www.hausworld.com/uploads/brochures/EN/separators.pdf' },
   ];
 
-  const [modalVisible, setModalVisible] = useState(false);
+const [modalVisible, setModalVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -100,7 +100,8 @@ const handleChange = (e) => {
         </div>
       )}
 
-      <Modal isOpen={modalVisible} onClose={() => setModalVisible(false)}>
+Sıla Bahadır, [24.07.2024 13:01]
+<Modal isOpen={modalVisible} onClose={() => setModalVisible(false)}>
         <h2>Broşür Talep Formu</h2>
         <form>
           <label>Ad Soyad:</label>
